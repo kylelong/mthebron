@@ -35,7 +35,7 @@ const App = () => {
           }
         </div>
         <div id="mobileMenu">
-          <img src={menu} className="menuBtn" onClick={clickedMenu} />
+          <img src={menu} alt="menubtn" className="menuBtn" onClick={clickedMenu} />
         </div>
       </div>
 
@@ -49,7 +49,7 @@ const App = () => {
       </div>
 
       <div>
-        <img src={church} className="churchImg" />
+        <img src={church} alt="church" className="churchImg" />
       </div>
       <Scripture />
       <Mission />
