@@ -4,7 +4,7 @@ import './Events.css';
 const Events = () => {
     return (
         <div className="eventsContainer">
-            <h3 className='sectionHeaderBrown'>Events</h3>
+            <h3 className='sectionHeader'>Events</h3>
            <ul>
                <li>February 13, 2022 - Sweet Treat Sunday Red And White Day</li>
                <li>February 20, 2022 - Apparel Day</li>

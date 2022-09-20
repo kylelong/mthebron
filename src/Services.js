@@ -3,7 +3,7 @@ import './Services.css'
 const Services = () => {
     return (
         <div className='servicesContainer'>
-            <h3 className="sectionHeader">Services</h3>
+            <h3 className="sectionHeaderBrown">Services</h3>
             <ul className="sectionList">
                 <li>Sunday School - 9:00 - 9:45am</li>
                 <li>Sunday Worship  - 10:00am</li>
