@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+body{
+  background-color: #836953;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body {
+  height: 100%;
+  width: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
+  display: flex;
+  flex-direction: row;
+}
+.churchInfo{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-left: 10px;
+}
+#mobileMenu{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#churchName{
+    font-family: 'Helvetica Neue', sans-serif; 
+		font-size: 50px;
+		font-weight: bold;
+		letter-spacing: -1px; 
+}
+#pastor{
+  font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -1px; 
+  position: relative;
+  bottom: 55px;
+}
+#address {
+  font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  position: relative;
+  bottom: 77px;
+}
+.menu{
+  margin-left: 59px;
+  position: relative;
+  bottom: 40px;
+}
+.menuLink{
   color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.menuLink:hover, .dropDownMenuLink:hover {
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.menuBtn:hover{
+  cursor: pointer;
+}
+
+.dropDownMenu{
+  display: flex;
+  flex-direction: column; 
+  position: relative;
+  bottom: 40px;
+}
+.dropDownMenuLink{
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+.churchImg{
+  border-radius: 5px;
+  max-width: 100%;
+  position: relative;
+  left: 17px;
+}
+ul li{
+  list-style: none;
+  line-height: 30px;
+  font-family: 'Helvetica Neue', sans-serif; 
+  font-weight: bold;
+}
+.sectionHeader {
+  color: white;
+  font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.sectionHeaderBrown{
+  color: #836953;
+  font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.sectionList{
+  text-align: center;
+}
+@media  (max-width: 750px){
+  .menu{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .churchImg{
+    position: relative;
+    left: unset;
   }
 }
+@media (min-width: 751px){
+  #mobileMenu, .dropDownMenu{
+    display: none;
+  }
+  .menu{
+    display: inline;
+  }
+}
+
