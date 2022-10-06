@@ -1,5 +1,5 @@
 body{
-  background-color: #836953;
+  background-color: #FFFFFF;
 }
 html, body {
   height: 100%;
@@ -30,6 +30,7 @@ html, body {
 		font-size: 50px;
 		font-weight: bold;
 		letter-spacing: -1px; 
+    color:  #836953;
 }
 #pastor{
   font-family: 'Helvetica Neue', sans-serif; 
@@ -48,14 +49,13 @@ html, body {
   bottom: 77px;
 }
 .menu{
-  margin-left: 59px;
   position: relative;
   bottom: 40px;
 }
 .menuLink{
-  color: white;
+  color: #836953;
   font-weight: bold;
-  font-family: sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   margin-right: 20px;
@@ -76,7 +76,7 @@ html, body {
   bottom: 40px;
 }
 .dropDownMenuLink{
-  color: white;
+  color: #836953;
   font-weight: bold;
   font-family: sans-serif;
   text-transform: uppercase;
@@ -93,25 +93,115 @@ ul li{
   list-style: none;
   line-height: 30px;
   font-family: 'Helvetica Neue', sans-serif; 
-  font-weight: bold;
+  font-weight: 400;
 }
 .sectionHeader {
-  color: white;
+  color: #836953;
   font-family: 'Helvetica Neue', sans-serif; 
   font-size: 20px;
   font-weight: bold;
-  text-align: center;
 }
 .sectionHeaderBrown{
   color: #836953;
   font-family: 'Helvetica Neue', sans-serif; 
   font-size: 20px;
   font-weight: bold;
+}
+/* Events */
+.eventsContainer{
+  width: 100%;
+  height: 100%;
+  margin: unset;
+  padding: unset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.iconImage {
+  margin-left: 20px;
+}
+/* Mission */
+.missionContainer{
+  /* background-color:  #836953; */
+  width: 100%;
+  max-width: 100%;
+  margin: unset;
+  padding: unset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+.missionStatement{
+  width: 600px;
+  font-family: 'Helvetica Neue', sans-serif; 
+  line-height: 30px;
+  padding: 10px;
+
+}
+/* Services */
+.servicesContainer {
+  width: 100%;
+  height: 100%;
+  margin: unset;
+  padding: unset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+
+/* Pastors Desk */
+.pastorDeskContainer h3 {
+  font-family: 'Helvetica Neue', sans-serif;
   text-align: center;
 }
-.sectionList{
-  text-align: center;
+.pastorDeskContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
 }
+.pastorDeskContainer a {
+  color: #836953;
+  text-decoration: none;
+  font-weight: bold;
+}
+.pastorDeskContainer img {
+  border-radius: 5px;
+}
+.pastorDeskContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+  position: relative;
+  bottom: 90px;
+}
+.pastorDeskContent ul li {
+  margin-bottom: 10px;
+}
+
+@media  (max-width: 750px){
+  .missionStatement{
+      width: unset;
+      max-width: 100%;
+  }
+}
+/* Footer */
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+}
+
 @media  (max-width: 750px){
   .menu{
     display: none;
@@ -119,6 +209,30 @@ ul li{
   .churchImg{
     position: relative;
     left: unset;
+  }
+}
+@media  (max-width: 1000px){
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pastorDeskContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .pastorDeskContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    position: relative;
+    bottom: unset;
   }
 }
 @media (min-width: 751px){
