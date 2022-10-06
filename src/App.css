@@ -10,6 +10,7 @@ html, body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 .header{
   display: flex;
@@ -31,6 +32,14 @@ html, body {
 		font-weight: bold;
 		letter-spacing: -1px; 
     color:  #836953;
+}
+.pageTitle{
+  font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px; 
+  color:  #836953;
+  padding-bottom: 20px;
 }
 #pastor{
   font-family: 'Helvetica Neue', sans-serif; 
@@ -201,7 +210,85 @@ ul li{
   display: flex;
   flex-direction: row;
 }
+/* ministries */
+.ministriesContainer{
+  margin-bottom: 50px;
+}
+/* visitors  */
+.visitorsContainer {
+  display: flex;
+  flex-direction: column;
+}
+.visitorsContainer button {
+  background-color: #836953;
+    color: white;
+    height: 50px;
+    font-weight: lighter;
+    font-size: 20px;
+    font-family: sans-serif;
+    border-radius: 4px;
+}
+.visitorMessage{
+  width: 358px;
+  font-family: sans-serif;
+  line-height: 25px;
+}
+.visitorMessage2{
+  width: 358px;
+  font-family: sans-serif;
+    line-height: 20px;
+    color: #836953;
+    font-weight: bold;
+}
+.visitorsContainer form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+/* */
+.ministriesRow{
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  font-family: 'Helvetica Neue', sans-serif;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.ministriesRow:nth-of-type(2) {
+  margin-left: 45px;
+}
+.ministriesRow p{
+  margin-right: 10px;
+}
+.minsitryLine{
+  color: #836953;
+  width: 20px;
+}
+@media (max-width: 400px){
+  .visitorsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .visitorMessage{
+    width: fit-content;
+  }
+  .visitorMessage2{
+    width: fit-content;
+  }
+}
+@media (max-width: 500px){
+  .ministriesRow{
+    display: flex;
+    flex-direction: column;
+  }
+  .ministriesRow:nth-of-type(2) {
+    margin-left: unset;
+  }
+  .minsitryLine{
+    display: none;
+  }
 
+}
 @media  (max-width: 750px){
   .menu{
     display: none;
@@ -235,6 +322,7 @@ ul li{
     bottom: unset;
   }
 }
+
 @media (min-width: 751px){
   #mobileMenu, .dropDownMenu{
     display: none;

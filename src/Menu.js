@@ -21,7 +21,7 @@ const Menu = () => {
                 <Link to="/"  className="dropDownMenuLink">Home</Link>
                 <Link to="/pastorsdesk" className="dropDownMenuLink">The Pastor's Desk</Link>
                 <Link to="/ministries"  className="dropDownMenuLink">Ministries</Link>
-                <Link to=""  className="dropDownMenuLink">Visitors</Link>
+                <Link to="/visitors"  className="dropDownMenuLink">Visitors</Link>
                 <Link to=""  className="dropDownMenuLink">Photos</Link>
                 <Link to=""  className="dropDownMenuLink">Contact Us</Link>
                 </div>
@@ -37,7 +37,7 @@ const Menu = () => {
             <Link to="/"  className="menuLink">Home</Link>
             <Link to="/pastorsdesk" className="menuLink">The Pastor's Desk</Link>
             <Link to="/ministries"  className="menuLink">Ministries</Link>
-            <Link to=""  className="menuLink">Visitors</Link>
+            <Link to="/visitors"  className="menuLink">Visitors</Link>
             <Link to=""  className="menuLink">Photos</Link>
             <Link to=""  className="menuLink">Contact Us</Link>
         </div>

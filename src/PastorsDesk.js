@@ -16,8 +16,9 @@ const PastorsDesk = () => {
     return (
         <div className="container">
             <Menu />
+            <p className="pageTitle">Pastor's Desk</p>
             <div className='pastorDeskContainer'>
-                <img src={pastor} />
+                <img src={pastor} alt="pastor dwayne" />
                 <div className="pastorDeskContent">
                     <h3>Opportunities for Spiritual Growth and Maturity</h3>
                     <ul>
