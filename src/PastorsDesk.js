@@ -32,7 +32,7 @@ const PastorsDesk = () => {
                     </ul>
                     <a href="http://nebula.wsimg.com/1b1d8c8715aa03bc9a5d142afbf871f0?AccessKeyId=0A0BA22D95F665126E59&disposition=0&alloworigin=1"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     >
                         Learn about our rich history &#8594;
                     </a>
