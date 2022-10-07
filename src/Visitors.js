@@ -1,18 +1,8 @@
 import React from 'react';
 import Menu from './Menu';
 import Footer from './Footer';
-// import { makeStyles } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
 const Visitors = () => {
-    // const useStyles = makeStyles((theme) => ({
-    //     root: {
-    //       '& > *': {
-    //         margin: theme.spacing(1),
-    //         width: '25ch',
-    //       },
-    //     },
-    //   }));
-    //   const classes = useStyles();
+
     return (
         <div className="container">
               <Menu />
@@ -36,7 +26,7 @@ const Visitors = () => {
 
                 <p className="visitorMessage2">Complete the contact form and we will send you a FREE gift! We look forward to your visit.</p> 
 
-                <form action="" noValidate>
+                {/* <form action="" noValidate>
                     <TextField id="outlined-basic" label="Name" variant="outlined" name="name" className="visitorsField" />
                     <br />
                     <TextField id="outlined-basic" label="Email" variant="outlined" name="phone" className="visitorsField" />
@@ -48,7 +38,7 @@ const Visitors = () => {
                     <TextField id="outlined-basic" label="Message" variant="outlined" name="message" className="visitorsField"/>
                     <br />
                     <button>Submit</button>
-                </form>
+                </form> */}
              </div>
         
 
