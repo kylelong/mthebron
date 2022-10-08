@@ -245,6 +245,22 @@ ul li{
   flex-direction: column;
   margin-bottom: 50px;
 }
+.textarea {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4375em;
+  letter-spacing: 0.00938em;
+  padding: 10px;
+  position: relative;
+  display: block;
+  transform-origin: top left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  resize: none;
+}
 /* */
 .ministriesRow{
   display: flex;
@@ -263,6 +279,15 @@ ul li{
 .minsitryLine{
   color: #836953;
   width: 20px;
+}
+/* photos */
+.photoMsg {
+  max-width: 500px;
+  text-align: left;
+  line-height: 24px;
+  font-family: 'Helvetica Neue', sans-serif;
+  border-left: 5px #836953 solid;
+  padding-left: 10px;
 }
 @media (max-width: 400px){
   .visitorsContainer {

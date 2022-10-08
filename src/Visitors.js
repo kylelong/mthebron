@@ -1,6 +1,8 @@
 import React from 'react';
 import Menu from './Menu';
 import Footer from './Footer';
+import TextField from '@mui/material/TextField';
+
 const Visitors = () => {
 
     return (
@@ -26,19 +28,28 @@ const Visitors = () => {
 
                 <p className="visitorMessage2">Complete the contact form and we will send you a FREE gift! We look forward to your visit.</p> 
 
-                {/* <form action="" noValidate>
-                    <TextField id="outlined-basic" label="Name" variant="outlined" name="name" className="visitorsField" />
+                 <form action="">
+                    <TextField id="outlined-basic" label="Name" variant="outlined" />
                     <br />
-                    <TextField id="outlined-basic" label="Email" variant="outlined" name="phone" className="visitorsField" />
+
+                    <TextField id="outlined-basic" label="Email" variant="outlined" />
                     <br />
-                    <TextField id="outlined-basic" label="Address" variant="outlined" name="address" className="visitorsField" />
+
+                    <TextField id="outlined-basic" label="Phone" variant="outlined" />
                     <br />
-                    <TextField id="outlined-basic" label="Subject" variant="outlined" name="subject" className="visitorsField" />
+
+                    <TextField id="outlined-basic" label="Address" variant="outlined" />
                     <br />
-                    <TextField id="outlined-basic" label="Message" variant="outlined" name="message" className="visitorsField"/>
+
+                    <TextField id="outlined-basic" label="Subject" variant="outlined" />
+                    <br />
+
+                   <textarea name="" id="" cols="30" rows="5" className="textarea" placeholder="Message">
+
+                   </textarea>
                     <br />
                     <button>Submit</button>
-                </form> */}
+                </form>
              </div>
         
 
